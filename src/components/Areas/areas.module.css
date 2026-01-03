@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.5em;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.tab {
+  padding: 0.35em 1.2em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: var(--dark-blue);
+  position: relative;
+  z-index: 1;
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(165, 156, 156, 0.363);
+  border-radius: 2em;
+  transition: transform 0.35s ease, width 0.35s ease;
+  z-index: 0;
+}
+
+.tabs button {
+  border-radius: 2em;
+  padding: 0.25em 1em;
+  cursor: pointer;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5em;
+  border: 1px solid var(--dark-blue);
+  border-radius: 0.5em;
+  background: var(--offWhite);
+  color: var(--dark-blue);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content span {
+  font-weight: 600;
+}
+.description {
+  animation: appear 0.5s ease-in-out;
+  font-size: 1.2em;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
