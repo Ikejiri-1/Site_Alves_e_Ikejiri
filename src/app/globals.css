@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+:root {
+  --dark-blue: #1a2f4d;
+  --offWhite: #e7e2de;
+}
+
+html {
+  overflow-y: scroll;
+}
