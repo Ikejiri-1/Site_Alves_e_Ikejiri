@@ -18,29 +18,30 @@ export const Header = () => {
   const pathname = usePathname();
   return (
     <header className={styles.heading}>
-      <Link href="/">
-        <Image
-          src={logo}
-          alt="Logo de um A cortado por um I, embaixo está escrito Alves & Ikejiri ADVOGADOS"
-          className={styles.logo}
-        ></Image>
-      </Link>
-      <nav className={styles.navBar}>
-        {navLinks.map((link) => (
-          <Link
-            key={link.id}
-            href={link.path}
-            className={
-              pathname === link.path
-                ? `${styles.link} ${styles.isActive}`
-                : styles.link
-            }
-          >
-            {link.name}
-          </Link>
-        ))}
-      </nav>
-      <div></div>
+      <div className={styles.container}>
+        <Link href="/">
+          <Image
+            src={logo}
+            alt="Logo de um A cortado por um I, embaixo está escrito Alves & Ikejiri ADVOGADOS"
+            className={styles.logo}
+          ></Image>
+        </Link>
+        <nav className={styles.navBar}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.id}
+              href={link.path}
+              className={
+                pathname === link.path
+                  ? `${styles.link} ${styles.isActive}`
+                  : styles.link
+              }
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 };

@@ -10,7 +10,7 @@ const areas = [
       {
         id: 1.1,
         description:
-          "Defesas em processos judiciais de <span>execução fiscal</span> nas esferas federal, estadual e municipal.",
+          "Defesas em processos judiciais de execução fiscal nas esferas federal, estadual e municipal.",
       },
       {
         id: 1.2,
