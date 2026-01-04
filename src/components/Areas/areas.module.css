@@ -57,7 +57,6 @@
   background: var(--offWhite);
   color: var(--dark-blue);
   height: 30vh;
-  display: flex;
   flex-direction: column;
   gap: 2em;
   display: flex;
