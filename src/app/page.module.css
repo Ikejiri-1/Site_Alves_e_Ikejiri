@@ -1,4 +1,21 @@
 .objectivesSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 1200px;
   margin: 0 auto;
+  margin-top: 2em;
+}
+.objectivesSection > * {
+  flex: 1;
+}
+
+.cardsSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
 }

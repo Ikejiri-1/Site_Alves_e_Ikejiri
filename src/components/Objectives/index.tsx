@@ -24,7 +24,7 @@ const objectivesList = [
 
 export const Objectives = () => {
   return (
-    <section>
+    <section className={styles.section}>
       <h1 className={styles.title}>
         Defendemos os interesses dos nossos clientes com dedicação e eficiência
       </h1>

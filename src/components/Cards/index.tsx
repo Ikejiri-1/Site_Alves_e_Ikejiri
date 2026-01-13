@@ -1,13 +1,17 @@
 import styles from "./card.module.css";
 
 interface CardsProps {
-  children: React.ReactNode;
+  title?: string;
+  content?: string;
 }
 
-export const Cards = ({ children }: CardsProps) => {
+export const Cards = ({ title, content }: CardsProps) => {
   return (
     <>
-      <article className={styles.card}>{children}</article>
+      <article className={styles.card}>
+        <h3>{title}</h3>
+        <p>{content}</p>
+      </article>
     </>
   );
 };

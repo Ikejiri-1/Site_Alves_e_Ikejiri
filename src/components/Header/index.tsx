@@ -4,6 +4,7 @@ import styles from "./header.module.css";
 import logo from "../../assets/logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   { id: 1, name: "Home", path: "/" },
@@ -15,9 +16,19 @@ const navLinks = [
 ];
 
 export const Header = () => {
+  const [solid, setSolid] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSolid(window.scrollY > 500);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const pathname = usePathname();
   return (
-    <header className={styles.heading}>
+    <header className={`${styles.heading} ${solid ? styles.solid : ""}`}>
       <div className={styles.container}>
         <Link href="/">
           <Image
