@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+  color: var(--dark-blue);
+}
+
 :root {
   --dark-blue: #1a2f4d;
   --offWhite: #e7e2de;
