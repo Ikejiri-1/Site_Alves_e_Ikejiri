@@ -15,7 +15,8 @@
   align-items: center;
   justify-content: center;
   gap: 2em;
-  width: 90%;
   margin: 0 auto;
   margin-top: 2em;
+  background-color: var(--dark-blue);
+  padding: 2em;
 }

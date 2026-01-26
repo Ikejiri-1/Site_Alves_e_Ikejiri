@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .title {
@@ -41,6 +41,7 @@
   border-radius: 2em;
   transition: transform 0.35s ease, width 0.35s ease;
   z-index: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .tabs button {
@@ -62,6 +63,8 @@
   gap: 2em;
   display: flex;
   flex-wrap: wrap;
+  list-style: disc;
+  list-style-position: inside;
 }
 
 .content span {
@@ -71,6 +74,7 @@
   animation: appear 0.5s ease-in-out;
   font-size: 1.3em;
   font-weight: 500;
+  line-height: 150%;
 }
 
 @keyframes appear {

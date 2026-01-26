@@ -14,7 +14,7 @@
 }
 
 .solid {
-  background: #0f074b; /* cor sólida */
+  background: var(--dark-blue); /* cor sólida */
   backdrop-filter: none; /* remove blur opcional */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* opcional */
 }

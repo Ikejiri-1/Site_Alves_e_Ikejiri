@@ -36,6 +36,10 @@ const areas = [
         id: 2.3,
         description: "Ações indenizatórias",
       },
+      {
+        id: 2.4,
+        description: "Suspensão de leilões judiciais e extrajudiciais",
+      },
     ],
   },
   {
@@ -60,10 +64,6 @@ const areas = [
       },
       {
         id: 3.5,
-        description: "Partilha de bens",
-      },
-      {
-        id: 3.6,
         description: "Inventários",
       },
     ],
@@ -80,6 +80,10 @@ const areas = [
       {
         id: 4.2,
         description: "Planejamento previdenciário",
+      },
+      {
+        id: 4.3,
+        description: "Assessoria e condução de pedido de auxílio-acidente",
       },
     ],
   },
@@ -116,15 +120,15 @@ export const Areas = () => {
         ))}
       </div>
 
-      <div key={activeIndex} className={styles.content}>
+      <ul key={activeIndex} className={styles.content}>
         {areas[activeIndex].content.map((c) => (
-          <p
-            className={styles.description}
+          <li
             key={c.id}
+            className={styles.description}
             dangerouslySetInnerHTML={{ __html: c.description }}
-          />
+          ></li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

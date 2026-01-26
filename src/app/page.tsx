@@ -4,6 +4,7 @@ import { Objectives } from "@/components/Objectives";
 import styles from "./page.module.css";
 import { Areas } from "@/components/Areas";
 import { Cards } from "@/components/Cards";
+import { WhyChooseUs } from "@/components/WhyChooseUs";
 
 const cardData = [
   {
@@ -43,7 +44,9 @@ export default function Home() {
       <section>
         <Areas />
       </section>
-      <section></section>
+      <section>
+        <WhyChooseUs />
+      </section>
     </>
   );
 }
