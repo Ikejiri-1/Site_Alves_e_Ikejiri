@@ -91,3 +91,11 @@
 .link {
   color: var(--offWhite);
 }
+
+.image {
+  width: 60px;
+  height: 60px;
+  margin-top: 2em;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(90%) saturate(300%)
+    hue-rotate(180deg);
+}

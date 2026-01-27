@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./card.module.css";
 import { JSX } from "react";
 import { CardButton } from "../CardButton";
+import Image, { StaticImageData } from "next/image";
 
 interface CardsProps {
   title?: string;
@@ -17,6 +18,7 @@ interface CardsProps {
   onClick?: () => void;
   icon?: JSX.Element;
   showIcon?: boolean;
+  img?: StaticImageData;
 }
 
 export const Cards = ({
@@ -32,6 +34,7 @@ export const Cards = ({
   href,
   icon,
   showIcon,
+  img,
   onClick,
 }: CardsProps) => {
   return (
@@ -41,6 +44,7 @@ export const Cards = ({
         onClick={onClick}
       >
         <div className={`${styles.face} ${styles.front}`}>
+          {img && <Image src={img} alt="" className={styles.image} />}
           <h3 className={styles.title}>{title}</h3>
           <h4 className={styles.subtitle}>{subtitle}</h4>
           <p className={styles.content}>{content}</p>
