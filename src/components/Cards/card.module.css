@@ -19,14 +19,19 @@
 .face {
   position: absolute;
   inset: 0;
+  height: 100%;
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
+  gap: 1em;
   align-items: center;
+  cursor: pointer;
 }
 
 .back {
   transform: rotateY(180deg);
+  display: flex;
+  gap: 3.6em;
 }
 
 .title {
@@ -35,11 +40,20 @@
   font-weight: 800;
   padding: 0 0.2em;
 }
-.content {
-  font-size: 1.2em;
-  line-height: 200%;
-  font-weight: 600;
+.subtitle {
+  font-size: 1.8em;
+  text-align: center;
+  color: var(--dark-blue);
   padding: 0 1em;
+  margin-top: 1em;
+  font-weight: 600;
+}
+.content {
+  font-size: 1em;
+  line-height: 200%;
+  font-weight: 300;
+  padding: 0 1em;
+  text-align: center;
 }
 .cardWrapper {
   transition: transform 0.3s ease;
@@ -48,4 +62,32 @@
 .cardWrapper:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.414);
+  border-radius: 1em;
+}
+
+.front {
+  position: relative;
+}
+
+.flipHint {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+
+.button {
+  background-color: var(--dark-blue);
+  color: var(--offWhite);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-weight: 600;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+.link {
+  color: var(--offWhite);
 }

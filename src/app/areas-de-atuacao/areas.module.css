@@ -19,3 +19,7 @@
 .flipped {
   transform: rotateY(180deg);
 }
+
+.areaCard {
+  height: 400px;
+}
