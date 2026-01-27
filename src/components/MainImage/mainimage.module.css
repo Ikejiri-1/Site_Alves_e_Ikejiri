@@ -14,3 +14,19 @@
   height: 100vh;
   will-change: transform;
 }
+
+.title {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--offWhite);
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.2em 0.4em;
+  padding-bottom: 0.3em;
+  border-radius: 0.5em;
+}

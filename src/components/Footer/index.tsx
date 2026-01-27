@@ -1,9 +1,9 @@
-import "./footer.module.css";
+import styles from "./footer.module.css";
 
 export const Footer = () => {
   return (
-    <footer>
-      <p>Footer</p>
+    <footer className={styles.footer}>
+      <figure className={styles.logo}></figure>
     </footer>
   );
 };

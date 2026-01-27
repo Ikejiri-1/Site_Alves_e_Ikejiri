@@ -20,7 +20,7 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setSolid(window.scrollY > 500);
+      setSolid(window.scrollY > 200);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

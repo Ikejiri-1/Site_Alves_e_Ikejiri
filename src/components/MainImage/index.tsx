@@ -24,8 +24,8 @@ export function MainImage({ img, title, alt, description }: MainImageProps) {
       </div>
 
       {title && (
-        <div className="main-image-title">
-          <div className="slide-wrapper-title">{title}</div>
+        <div className={styles.mainImageTitle}>
+          <div className={styles.title}>{title}</div>
         </div>
       )}
 
