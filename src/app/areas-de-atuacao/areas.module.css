@@ -5,3 +5,17 @@
   justify-content: center;
   gap: 2em;
 }
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 1em auto;
+  justify-content: space-around;
+  gap: 2em;
+  max-width: 1300px;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
