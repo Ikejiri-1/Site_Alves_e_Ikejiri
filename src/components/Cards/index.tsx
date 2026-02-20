@@ -10,7 +10,6 @@ interface CardsProps {
   content?: string;
   flippedTitle?: string;
   flippedContent?: string;
-  flippedSubtitle?: string;
   className?: string;
   linkText?: string;
   flipped?: boolean;
@@ -27,9 +26,7 @@ export const Cards = ({
   content,
   flippedTitle,
   flippedContent,
-  flippedSubtitle,
   className,
-  linkText,
   flipped,
   href,
   icon,
@@ -53,11 +50,10 @@ export const Cards = ({
 
         <div className={`${styles.face} ${styles.back}`}>
           <h3 className={styles.title}>{flippedTitle}</h3>
-          <h4 className={styles.subtitle}>{flippedSubtitle}</h4>
           <p className={styles.content}>{flippedContent}</p>
           <CardButton className={styles.button}>
             <Link href={href ?? "/"} className={styles.link}>
-              {linkText}
+              Saiba mais
             </Link>
           </CardButton>
         </div>
