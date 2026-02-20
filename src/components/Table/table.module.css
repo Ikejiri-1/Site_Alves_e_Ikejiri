@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.table {
+  width: 30%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.table td {
+  border: 1px solid #ddd;
+  padding: 16px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.titleCell {
+  width: 200px;
+  background-color: var(--dark-blue);
+  color: var(--offWhite);
+  font-weight: bold;
+}

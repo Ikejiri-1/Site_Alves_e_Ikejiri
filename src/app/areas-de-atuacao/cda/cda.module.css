@@ -1,0 +1,20 @@
+.title {
+  margin-top: -0.5em;
+  color: var(--dark-blue);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+}
+.subtitle {
+  margin-top: 1em;
+  color: var(--dark-blue);
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 0 auto;
+}
