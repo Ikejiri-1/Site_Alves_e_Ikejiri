@@ -1,0 +1,21 @@
+.cardPrescContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  background: var(--dark-blue);
+  padding: 2em;
+}
+.cardContainerTitle {
+  color: var(--offWhite);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  width: 50%;
+  margin: 0 auto 1em auto;
+}
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}

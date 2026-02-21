@@ -49,6 +49,7 @@ export default function AreasDeAtuacao() {
       flippedTitle: "Prescrição Intercorrente",
       flippedContent:
         "Muitos contribuintes acreditam que, uma vez iniciada uma Execução Fiscal, a dívida durará para sempre. No entanto, o Direito brasileiro pune a inércia do Estado. Se a Fazenda Pública não conseguir localizar o devedor ou bens penhoráveis dentro de um determinado período, ocorre a chamada Prescrição Intercorrente, que resulta na extinção definitiva do processo e da dívida.",
+      href: "/areas-de-atuacao/prescricao-intercorrente",
       flipped: false,
       showIcon: true,
     },
