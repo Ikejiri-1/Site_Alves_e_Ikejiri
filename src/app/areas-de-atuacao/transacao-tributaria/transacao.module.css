@@ -1,0 +1,28 @@
+.pgfnContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.tableContainer {
+  width: 800px;
+  text-align: center;
+}
+
+.textContainer {
+  width: 600px;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--dark-blue);
+  padding: 2em;
+}
+.cardContainer h2 {
+  color: var(--offWhite);
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}

@@ -73,6 +73,8 @@ export default function AreasDeAtuacao() {
       flippedTitle: "Transação Tributária",
       flippedContent:
         "Para empresas e indivíduos que possuem débitos com o Fisco, a busca pela regularidade fiscal é essencial para a manutenção das atividades, obtenção de certidões (CND) e participação em licitações. Hoje, o cenário jurídico brasileiro oferece ferramentas muito mais vantajosas do que os antigos parcelamentos convencionais, com destaque para a Transação Tributária.",
+
+      href: "/areas-de-atuacao/transacao-tributaria",
       flipped: false,
       showIcon: true,
     },
