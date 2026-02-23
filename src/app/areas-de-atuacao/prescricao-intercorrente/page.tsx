@@ -104,7 +104,7 @@ export default function PrescIntercorrent() {
           De acordo com o STJ, o prazo de um ano de suspensão começa
           automaticamente na data em que a Fazenda é cientificada de que não
           foram encontrados bens ou o devedor. Isso evita que o processo fique
-          &ldquo;eterno&ldquo; por falta de movimentação do Judiciário ou do
+          &ldquo;eterno&rdquo; por falta de movimentação do Judiciário ou do
           Fisco.
         </p>
       </section>
@@ -112,7 +112,7 @@ export default function PrescIntercorrent() {
         <h1>Por que esta é uma das melhores defesas para o contribuinte?</h1>
         <h2>
           A prescrição intercorrente é uma tese de &ldquo; ordem pública
-          &ldquo;. Seus principais benefícios são:
+          &rdquo;. Seus principais benefícios são:
         </h2>
         <Table types={defenseTableContent} />
       </section>

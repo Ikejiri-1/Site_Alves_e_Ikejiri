@@ -61,6 +61,7 @@ export default function AreasDeAtuacao() {
       flippedTitle: "SISBAJUD",
       flippedContent:
         'Se você possui um processo de Execução em andamento já deve ter ouvido falar da "Teimosinha". Esta ferramenta do sistema SISBAJUD transformou a forma como a Justiça bloqueia contas bancárias, tornando o processo muito mais agressivo para o devedor.',
+      href: "/areas-de-atuacao/sisbajud",
       flipped: false,
       showIcon: true,
     },
