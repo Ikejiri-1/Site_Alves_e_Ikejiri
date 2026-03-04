@@ -16,7 +16,7 @@ const data = [
   {
     id: 2,
     description: "Transparência em cada etapa.",
-    icon: foco,
+    icon: saudacao,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const data = [
     id: 4,
     description:
       "Profissionais dedicados e com foco na entrega de serviço a nível de excelência.",
-    icon: saudacao,
+    icon: foco,
   },
 ];
 export const WhyChooseUs = () => {

@@ -2,6 +2,8 @@
   background-color: var(--dark-blue);
   margin-top: 1em;
   padding: 2em;
+  display: flex;
+  gap: 5em;
 }
 .logo {
   width: 200px;
@@ -9,4 +11,14 @@
   mask: url("/assets/logo_azul.png") no-repeat center / contain;
   -webkit-mask: url("/assets/logo_azul.png") no-repeat center / contain;
   background: var(--offWhite);
+}
+.contacts {
+  color: var(--offWhite);
+}
+.contactsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 2em;
+  font-size: 18px;
 }
